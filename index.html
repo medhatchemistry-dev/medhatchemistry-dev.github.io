@@ -7,6 +7,12 @@
 
     <title>Chemistry Exams</title>
 
+    <!-- Use the Exams website favicon -->
+    <link
+        rel="icon"
+        href="https://chemistry-khalid.vercel.app/favicon.ico"
+    >
+
     <style>
         * {
             box-sizing: border-box;
@@ -27,20 +33,26 @@
         body {
             position: fixed;
             inset: 0;
+            overflow: hidden;
         }
 
         iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
+            position: fixed;
+            inset: 0;
+
             width: 100vw;
             height: 100vh;
+
             width: 100dvw;
             height: 100dvh;
+
             margin: 0;
             padding: 0;
             border: 0;
+
             display: block;
+
+            overflow: hidden;
             background: #ffffff;
         }
     </style>
@@ -52,6 +64,7 @@
         title="Chemistry Exams"
         allow="fullscreen; autoplay; clipboard-read; clipboard-write"
         allowfullscreen
+        scrolling="no"
         loading="eager">
     </iframe>
 </body>
